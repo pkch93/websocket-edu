@@ -14,8 +14,6 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-websocket'
-    implementation 'org.springframework.boot:spring-boot-starter-amqp'
-    implementation 'org.springframework.integration:spring-integration-stomp'
     implementation 'io.projectreactor.netty:reactor-netty'
     implementation 'io.netty:netty-all'
 
