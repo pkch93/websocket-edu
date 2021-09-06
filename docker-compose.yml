@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  mq:
+    image: rabbitmq
+    container_name: stomp-message-broker
+    ports:
+      - "15672:15672"
+      - "15692:15692"
+      - "61613:61613"
+    volumes:
+    - ./src/appconf/rabbitmq/enable_plugins:/etc/rabbitmq/enabled_plugins
